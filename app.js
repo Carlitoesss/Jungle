@@ -13,6 +13,9 @@ app.get('/forgotPass', function (req, res) {
   res.render('ForgotPass');
 });
 
+app.get('/SignUp', function (req, res) {
+  res.render('SignUp');
+});
 
 app.get('/Views/homepage.ejs', function (req, res) {
     res.render('homepage')
