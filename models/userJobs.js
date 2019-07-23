@@ -13,11 +13,9 @@ module.exports = function(sequelize, DataTypes){
         },
         Done: {
             type: DataTypes.BOOLEAN, 
-            allowNull: false
         },
         pending: {
             type: DataTypes.BOOLEAN, 
-            allowNull: false
         }
     });
 

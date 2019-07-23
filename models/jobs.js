@@ -32,7 +32,6 @@ module.exports = function(sequelize, DataTypes){
         },
         avatar: {
             type: DataTypes.STRING, 
-            allowNull: false
         }
     });
 
