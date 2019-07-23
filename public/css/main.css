@@ -1,7 +1,17 @@
 body {
-    background-color: rgb(78, 64, 64);
+    background-color: rgb(255, 255, 255);
 }
 
 .mtn {
     background-color: rgb(83, 74, 74);
 }
+
+
+#div1 {
+    margin: 25px;
+    width: 500px;
+    height: 700px;
+    border: 5px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
