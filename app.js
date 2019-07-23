@@ -18,10 +18,19 @@ app.get('/SignUp', function (req, res) {
   res.render('SignUp');
 });
 
-app.get('/Views/homepage.ejs', function (req, res) {
+app.get('/homepage', function (req, res) {
     res.render('homepage')
     console.log(err)
   })
+
+app.get('/toa', function (req, res) {
+    res.render('toa');
+  });
+
+app.get('/singlejob', function (req, res) {
+    res.render('singlejob');
+});
+  
 
 
  database.sequelize.sync().then(function(){
