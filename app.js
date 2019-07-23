@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const database = require('./models');
 
 app.set("view engine", "ejs");
 
@@ -17,15 +18,31 @@ app.get('/SignUp', function (req, res) {
   res.render('SignUp');
 });
 
-app.get('/Views/homepage.ejs', function (req, res) {
+app.get('/homepage', function (req, res) {
     res.render('homepage')
     console.log(err)
   })
 
+app.get('/toa', function (req, res) {
+    res.render('toa');
+  });
 
-  app.listen(3000, function(err){
-    if (err){
-    console.log(err)
-    }
-    console.log('server is live on port 3000!!')
+app.get('/singlejob', function (req, res) {
+    res.render('singlejob');
+});
+
+app.get('/CreatingJob', function (req, res) {
+    res.render('CreatingJob')
 })
+  
+app.get('/Chat', function (req, res) {
+  res.render('Chat')
+})
+
+ database.sequelize.sync().then(function(){
+    app.listen(3000, function(err){
+        if (err)
+            console.log(err)
+        console.log('Server is live on port: ' + 3000)
+    })
+});
