@@ -9,7 +9,6 @@ module.exports = function(sequelize, DataTypes){
         },
         phone: {
             type: DataTypes.STRING, 
-            allowNull: false
         },
         name: {
             type: DataTypes.STRING, 
@@ -21,7 +20,6 @@ module.exports = function(sequelize, DataTypes){
         },
         license: {
             type: DataTypes.STRING, 
-            allowNull: false
         },
         role: {
             type: DataTypes.STRING, 
@@ -33,11 +31,9 @@ module.exports = function(sequelize, DataTypes){
         },
         bio: {
             type: DataTypes.TEXT, 
-            allowNull: false
         },
         avatar: {
             type: DataTypes.STRING, 
-            allowNull: false
         }
     });
 
