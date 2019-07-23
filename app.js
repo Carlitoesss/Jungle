@@ -30,8 +30,14 @@ app.get('/toa', function (req, res) {
 app.get('/singlejob', function (req, res) {
     res.render('singlejob');
 });
-  
 
+app.get('/CreatingJob', function (req, res) {
+    res.render('CreatingJob')
+})
+  
+app.get('/Chat', function (req, res) {
+  res.render('Chat')
+})
 
  database.sequelize.sync().then(function(){
     app.listen(3000, function(err){
