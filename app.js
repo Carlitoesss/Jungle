@@ -14,11 +14,11 @@ app.get('/forgotPass', function (req, res) {
   res.render('ForgotPass');
 });
 
-app.get('/SignUp', function (req, res) {
+app.get('/signup', function (req, res) {
   res.render('SignUp');
 });
 
-app.get('/Views/homepage.ejs', function (req, res) {
+app.get('/views/homepage.ejs', function (req, res) {
     res.render('homepage')
     console.log(err)
   })
