@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const database = require('./models');
 
 app.set("view engine", "ejs");
 
@@ -23,9 +24,10 @@ app.get('/Views/homepage.ejs', function (req, res) {
   })
 
 
-  app.listen(3000, function(err){
-    if (err){
-    console.log(err)
-    }
-    console.log('server is live on port 3000!!')
-})
+ database.sequelize.sync().then(function(){
+    app.listen(3000, function(err){
+        if (err)
+            console.log(err)
+        console.log('Server is live on port: ' + 3000)
+    })
+});
