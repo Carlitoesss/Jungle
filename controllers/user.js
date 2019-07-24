@@ -12,7 +12,7 @@ exports.userLogin = (req, res) => {
 }
 
 // GET /profile
-exports.userProfile = (req, res) => {
+exports.profile = (req, res) => {
     res.render('profile', {currentUser: req.user});
 }
 
@@ -30,6 +30,41 @@ exports.signup = passport.authenticate('local-signup', {
 
 // POST user/login
 exports.userSignin = passport.authenticate('local', { 
+    successRedirect: '/profile',
+    failureRedirect: '/user/login' 
+});
+
+exports.forgotpass = passport.authenticate('local', { 
+    successRedirect: '/profile',
+    failureRedirect: '/user/login' 
+});
+
+exports.homepage = passport.authenticate('local', { 
+    successRedirect: '/profile',
+    failureRedirect: '/user/login' 
+});
+
+exports.toa = passport.authenticate('local', { 
+    successRedirect: '/profile',
+    failureRedirect: '/user/login' 
+});
+
+exports.singlejob = passport.authenticate('local', { 
+    successRedirect: '/profile',
+    failureRedirect: '/user/login' 
+});
+
+exports.creatingjob = passport.authenticate('local', { 
+    successRedirect: '/profile',
+    failureRedirect: '/user/login' 
+});
+
+exports.chat = passport.authenticate('local', { 
+    successRedirect: '/profile',
+    failureRedirect: '/user/login' 
+});
+
+exports.profile = passport.authenticate('local', { 
     successRedirect: '/profile',
     failureRedirect: '/user/login' 
 });
