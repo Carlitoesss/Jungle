@@ -9,24 +9,17 @@
     <title>Register</title>
 </head>
 <body>
-   <a class="text-center">
-     <h1 class="mt-5">Sign Up</h1><br>
-     <form>
+     <h1 class="mt-5 text-center">Sign Up</h1><br>
+     <form action="/SignUp.ejs" method="POST" class="text-center">
          <h2 class="display-5 text-center ">Name</h2>
          <div class="display-5 text-center">
              <input type="text" class=" mt-1 mb-4 text-center" placeholder="First" aria-label="First" aria-describedby="basic-addon1" required>
              <input type="text" class=" mt-1 mb-4 text-center" placeholder="Last" aria-label="Last" aria-describedby="basic-addon1" required>
          </div> 
-      </form>
-     <form class="text-center">
          <h11>Age</h11>
             <input type="" class=" mt-1 mb-4" placeholder="Age" aria-label="Username" aria-describedby="basic-addon1"> 
-     </form>  
-     <form action="/action_page.php">
         Birthday:
         <input type="date" name="bday"><br>
-      </form>
-     <form>
      <h3 class="display-5 mt-4">Email</h3>
          <div class='form-group'>
              <input input type="text" class=" mt-1 mb-4 text-center" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" required> 
@@ -39,8 +32,6 @@
          <div>
              <input input type="password" class=" mt-1 mb-5 text-center" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required> 
         </div>
-     </form>
-     <form class="text-center">
      <h6>Address</h6>
         <div>
             <h7 class='display-5'>State </h7><select class="text-center">
@@ -99,12 +90,9 @@
             <h8> City </h8> <input input type="text" class=" mt-1 mb-3 text-center" placeholder="City" aria-label="Password" aria-describedby="basic-addon1" required>
         </div>
         <h9>Street </h9> <input input type="text" class=" mt-1 mb-3 text-center" placeholder="Street" aria-label="Password" aria-describedby="basic-addon1" required>
-         <h10>Zip code </h10> <input input type="text" class=" mt-1 mb-3 text-center" placeholder="Zip code" aria-label="Password" aria-describedby="basic-addon1" required>
-     </form>
-     <form class="text-center mt-1"><br>
+         <h10>Zip code </h10> <input input type="text" class=" mt-1 mb-3 text-center" placeholder="Zip code" aria-label="Password" aria-describedby="basic-addon1" required><br>
          <button><a href="/toa">Create your account</a></button>
          <br><p class="text-center mt-3">Alright have an <a href="/Login">Account</a>?</p>
     </form>
-    </a>
 </body>
 </html>
