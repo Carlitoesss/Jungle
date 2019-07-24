@@ -1,4 +1,5 @@
 const express = require('express');
+const routes  = require('./routes');
 const app = express();
 const database = require('./models');
 
@@ -6,42 +7,48 @@ app.set("view engine", "ejs");
 
 app.use(express.static('./public'));
 
-app.get('/login', function (req, res) {
-  res.render('Login');
-});
+// app.get('/login', function (req, res) {
+//   res.render('Login');
+// });
 
-app.get('/forgotPass', function (req, res) {
-  res.render('ForgotPass');
-});
+// app.post( '/user/signup', userController.signup );
 
-app.get('/signup', function (req, res) {
-  res.render('SignUp');
-});
+// app.get('/forgotPass', function (req, res) {
+//   res.render('ForgotPass');
+// });
 
-app.get('/home', function (req, res) {
-    res.render('homepage')
-    console.log(err)
-  })
+// // app.get('/signup', function (req, res) {
+// //   res.render('SignUp');
+// // });
 
-app.get('/toa', function (req, res) {
-    res.render('toa');
-  });
+// app.get('/home', function (req, res) {
+//     res.render('homepage')
+//     console.log(err)
+//   })
 
-app.get('/singlejob', function (req, res) {
-    res.render('singlejob');
-});
+// app.get('/toa', function (req, res) {
+//     res.render('toa');
+//   });
 
-app.get('/creatingjob', function (req, res) {
-    res.render('CreatingJob')
-})
+// app.get('/singlejob', function (req, res) {
+//     res.render('singlejob');
+// });
+
+// app.get('/creatingjob', function (req, res) {
+//     res.render('CreatingJob')
+// })
   
-app.get('/chat', function (req, res) {
-  res.render('Chat')
-})
+// app.get('/chat', function (req, res) {
+//   res.render('Chat')
+// })
 
-app.get('/profile', function (req, res) {
-  res.render('profile')
-})
+// app.get('/profile', function (req, res) {
+//   res.render('profile')
+// })
+
+// routing manager
+app.use(routes);
+
 
 database.sequelize.sync().then(function(){
     app.listen(3000, function(err){
