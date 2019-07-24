@@ -5,7 +5,12 @@ const database = require('./models');
 
 app.set("view engine", "ejs");
 
+// setting up all middleware
 app.use(express.static('./public'));
+app.use(bodyParser);
+app.use(session({ secret: "Were only 15 years old!!!!!", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 
 // app.get('/login', function (req, res) {
 //   res.render('Login');
