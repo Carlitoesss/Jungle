@@ -5,16 +5,23 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="../public/css/main.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="/css/main.css">
    <title>Job Creator</title>
 </head>
-<body>
+<body class="text-center">
    <h1>Create a Job</h1>
       <form element id=form>
        Job Title:  <input type="text" name="jobTitle"><br>
        <br>
-       Job Description: <input type="text" rows="4">
-   </form>
+       Images: <input type="text" rows="4"><br>
+       <br>
+       Job Description: <input type="text" rows="4"><br>
+       <br>
+       Location: <input type="text" rows="4"><br>
+       <br>
+       Pay Amount: <input type="text" rows="4"><br>
+      </form>
    <br>
    <br>
    <br>
@@ -23,8 +30,14 @@
    <form>
        <input type="radio" name="JobType" value="Lawncare" checked> Lawncare<br>
        <input type="radio" name="JobType" value="Babysitting"> Baby siting<br>
-       <input type="radio" name="JobType" value="Transportation"> Transportation
-      <button></button>
+       <input type="radio" name="JobType" value="Transportation"> Transportation<br>
+       <input type="radio" name="JobType" value="Delivery" checked> Delivery<br>
+       <input type="radio" name="JobType" value="Tutoring"> Tutoring<br>
+       <input type="radio" name="JobType" value="Shopping"> Shopping<br>
+       <input type="radio" name="JobType" value="Other"> Other<br>
+   </form>
+   <form>
+      <button><a href="/homepage">Submit Job</a></button>
    </form>
 </body>
 </html>

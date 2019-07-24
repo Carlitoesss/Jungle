@@ -39,7 +39,11 @@ app.get('/Chat', function (req, res) {
   res.render('Chat')
 })
 
- database.sequelize.sync().then(function(){
+app.get('/profile', function (req, res) {
+  res.render('profile')
+})
+
+database.sequelize.sync().then(function(){
     app.listen(3000, function(err){
         if (err)
             console.log(err)
