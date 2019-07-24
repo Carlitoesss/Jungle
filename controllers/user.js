@@ -64,11 +64,6 @@ exports.chat = passport.authenticate('local', {
     failureRedirect: '/user/login' 
 });
 
-exports.profile = passport.authenticate('local', { 
-    successRedirect: '/profile',
-    failureRedirect: '/user/login' 
-});
-
 // // Get login/facebook
 // exports.fblogin = passport.authenticate('facebook');
 
