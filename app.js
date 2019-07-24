@@ -18,7 +18,7 @@ app.get('/SignUp', function (req, res) {
   res.render('SignUp');
 });
 
-app.get('/homepage', function (req, res) {
+app.get('/home', function (req, res) {
     res.render('homepage')
     console.log(err)
   })
