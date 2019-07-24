@@ -9,19 +9,17 @@
     <title>Login</title>
 </head>
 <body>
-    <h1 class="display-5 text-center mt-5">Login</h1><br>
-        <h2 class="display-5 text-center ">Username or Email</h2>
-            <div class="display-5 text-center">
-                <input type="text" class=" mt-1 mb-4" placeholder="Username or Email" aria-label="Username" aria-describedby="basic-addon1" required>
-            </div> 
-        <h3 class="display-5 text-center">Password</h3>
-            <div class="display-5 text-center">
-                <input type="password" class=" mt-1 mb-4" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required>
-                <p class="text-center">Forgot <a href="/ForgotPass">password<a></p>
-                <p class="text-center">Dont have an <a href="/Login">Account</a>?</p>
-                <button class="btn btn-dark"><a href='/homepage'>Login</a></button>
-                
-            </div>
+    <form class="login" action="/login" method="POST">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" name="email" class="form-control" id="email-input" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" name="password" class="form-control" id="password-input" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-default">Login</button>
+      </form>
 </body>
 </html>
 

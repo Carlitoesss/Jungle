@@ -18,11 +18,7 @@ app.get('/signup', function (req, res) {
   res.render('SignUp');
 });
 
-<<<<<<< HEAD
-app.get('/views/homepage.ejs', function (req, res) {
-=======
-app.get('/homepage', function (req, res) {
->>>>>>> 5ce0f4e5013cfa5ca7aa555d86b0875eed05ffd0
+app.get('/home', function (req, res) {
     res.render('homepage')
     console.log(err)
   })
@@ -35,11 +31,11 @@ app.get('/singlejob', function (req, res) {
     res.render('singlejob');
 });
 
-app.get('/CreatingJob', function (req, res) {
+app.get('/creatingjob', function (req, res) {
     res.render('CreatingJob')
 })
   
-app.get('/Chat', function (req, res) {
+app.get('/chat', function (req, res) {
   res.render('Chat')
 })
 
