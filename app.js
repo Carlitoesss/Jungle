@@ -14,11 +14,11 @@ app.get('/forgotPass', function (req, res) {
   res.render('ForgotPass');
 });
 
-app.get('/SignUp', function (req, res) {
+app.get('/signup', function (req, res) {
   res.render('SignUp');
 });
 
-app.get('/homepage', function (req, res) {
+app.get('/home', function (req, res) {
     res.render('homepage')
     console.log(err)
   })
@@ -31,11 +31,11 @@ app.get('/singlejob', function (req, res) {
     res.render('singlejob');
 });
 
-app.get('/CreatingJob', function (req, res) {
+app.get('/creatingjob', function (req, res) {
     res.render('CreatingJob')
 })
   
-app.get('/Chat', function (req, res) {
+app.get('/chat', function (req, res) {
   res.render('Chat')
 })
 
