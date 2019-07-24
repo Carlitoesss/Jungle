@@ -2,8 +2,8 @@ const passport = require('../config/passport');
 const isAuthenticated = require('../config/middleware/isAuthenticated');
 
 // GET user/signup
-exports.register = (req, res) => {
-    res.render('register');
+exports.signups = (req, res) => {
+    res.render('signup');
 }
 
 // GET /user/login
