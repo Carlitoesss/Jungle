@@ -4,9 +4,9 @@ const userController = require('../controllers/user')
 const isAuthenticated = require('../config/middleware/isAuthenticated');
 
 
-router.get( '/user/login', userController.userLogin );
+router.get( '/login', userController.userLogin );
 
-router.get( '/user/signup', userController.register );
+router.get( '/user/signup', userController.signups );
 
 router.post( '/user/signup', userController.signup );
 
