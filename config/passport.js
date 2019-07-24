@@ -31,7 +31,7 @@ passport.use(new LocalStrategy(
     {  usernameField: 'email',
        passReqToCallback: true }, // allow us to use the entire request coming from our app},
     function(req, email, password, done) {
-      db.User.findOne( { where: { email: email } } ).then( function(dbuser){
+      db.Users.findOne( { where: { email: email } } ).then( function(dbuser){
         // to verify that the email is not in use
         if (dbuser) {
             return done(null, false, { message: 'Email is already taken.' } );

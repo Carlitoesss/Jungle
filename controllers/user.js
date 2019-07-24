@@ -3,7 +3,7 @@ const isAuthenticated = require('../config/middleware/isAuthenticated');
 
 // GET user/signup
 exports.signups = (req, res) => {
-    res.render('SignUp');
+    res.render('signup');
 }
 
 // GET /user/login
@@ -60,11 +60,6 @@ exports.creatingjob = passport.authenticate('local', {
 });
 
 exports.chat = passport.authenticate('local', { 
-    successRedirect: '/profile',
-    failureRedirect: '/user/login' 
-});
-
-exports.profile = passport.authenticate('local', { 
     successRedirect: '/profile',
     failureRedirect: '/user/login' 
 });

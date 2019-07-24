@@ -6,11 +6,11 @@ const isAuthenticated = require('../config/middleware/isAuthenticated');
 
 router.get( '/login', userController.userLogin );
 
+router.get('/logout', userController.userLogout);
+
 router.get( '/signup', userController.signups );
 
-router.post( '/user/signup', userController.signup );
-
-router.post( '/user/profile', userController.userSignin );
+router.post( '/signup', userController.signup );
 
 router.get('/forgotpass', userController.forgotpass );
 

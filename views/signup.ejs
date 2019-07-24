@@ -9,7 +9,7 @@
     <title>Register</title>
 </head>
 <body>
-    <form action="/SignUp" method="POST" class="text-center">
+    <form action="/signup" method="POST" class="text-center">
         <h1 class="mt-5 text-center">Sign Up</h1><br> 
          <h2 class="display-5 text-center ">Name</h2>
          <div class="display-5 text-center">
@@ -19,11 +19,7 @@
         <input name="dob" type="date" name="bday"><br>
      <h4 class="display-5 mt-4">Email</h4>
          <div class='form-group'>
-             <input name="dob" input type="text" class=" mt-1 mb-4 text-center" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" required> 
-         </div>
-     <h5>Username</h5>
-         <div>
-             <input input type="text" class=" mt-1 mb-4 text-center" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required> 
+             <input name="email" input type="text" class=" mt-1 mb-4 text-center" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" required> 
          </div>
      <h6>Password</h6>
          <div>
@@ -32,11 +28,18 @@
      <h7>Address</h7><br>
          <input name="address" type="text" name="address" class=" mt-1 mb-3 text-center" placeholder="Address" aria-label="Password" aria-describedby="basic-addon1" required><br>
      <h8>Phone Number</h8><br>
+<<<<<<< HEAD:views/SignUp.ejs
         <input name="phone" type="text" name="address" class=" mt-1 mb-3 text-center" placeholder="Phone-number" aria-label="Password" aria-describedby="basic-addon1" required><br>   
      <h9>Avatar</h9><br>
         <input type="file" name="avatar" class="text-center mb-3" placeholder="Avatar">
         <br><button><a href="/toa">Create your account</a></button>
         <br><p class="text-center mt-3">Alright have an <a href="/login">Account</a>?</p>
+=======
+        <input name="phone" type="text" name="address" class=" mt-1 mb-3 text-center" placeholder="Phone-number" aria-label="Password" aria-describedby="basic-addon1" required><br>
+         <button>Create your account</button>
+         <a href="/toa">terms of agreement</a>
+         <br><p class="text-center mt-3">Alright have an <a href="/login">Account</a>?</p>
+>>>>>>> 0a20d2f87279b41a51c57161c4d6481722e5c8e6:views/signup.ejs
     </form>
 </body>
 </html>
