@@ -9,7 +9,7 @@
     <title>Viewing a single job</title>
 </head>
 <body>
-    <form  class="text-center" action="POST" method="POST">
+    <form  class="text-center" action="/chat" method="POST">
             <div class="navbar-nav-scroll">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                             <a class="navbar-brand" href="homepage">Jungle</a>
@@ -19,25 +19,21 @@
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                 <div class="navbar-nav">
                                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link" href="profile">Profile</a>
-                                <a class="nav-item nav-link" href="CreatingJob">Post a Job</a>
+                                <a class="nav-item nav-link" href="/views/profile.ejs">Profile</a>
+                                <a class="nav-item nav-link" href="/views/CreatingJob.ejs">Post a Job</a>
                             </div>
                     </div>
                 </nav>
             </div>
-    </form>
-    <form class="text-center"><br>
         <h1 class="display-4">Job info</h1><br>
         <img src="/download.png" alt="gt"><br>
-    </form class="text-center"><br>
     <div class="d-flex justify-content-center mt-5"> 
         <textarea id="div3" rows="10" cols="50">
             information about the job.
         </textarea>
     </div>
-<a href="/Chat">
-    <div class="text-center mt-5">
-      <button class="text-primary">Take Job</button><div ng-app="app" ng-init="liked = false">
+    <div href="/chat"><br>
+        <button >Take the job</button>
     </div>
 </body>
 </html>
