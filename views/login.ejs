@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Login</title>
 </head>
 <body>
     <form class="login text-center" action="/login" method="POST">
-        <div class="form-group">
-          <label class="display-5" for="exampleInputEmail1">Email address</label>
-            <input type="email" name="email" class="form-control" id="email-input" placeholder="Email" aria-label="First" aria-describedby="basic-addon1" required>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-            <input type="password" name="password" class="form-control" id="password-input" placeholder="Password" aria-describedby="basic-addon1" required>
-        </div>
-        <button type="submit" class="btn btn-default"><a href="/homepage">Login</a></button>
+      <div class="bucket">
+        <div class="buffer">
+          <div class="header">
+            <h1 class="title">Login</h1>
+          </div>
+           <form method="post" action="/signin">
+             <label for="email">Email</label>
+             <input type="text" id="email" />
+             <label for="password" >Password</label>
+             <input type="password" id="password" />
+           
+             <input class="btn" type="submit" value="/signin"/>
+           </form>
+       </div>
+     </div>
       </form>
 </body>
 </html>

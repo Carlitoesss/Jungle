@@ -48,9 +48,9 @@ app.use(passport.session());
 // //     res.render('toa');
 // //   });
 
-// // app.get('/singlejob', function (req, res) {
-// //     res.render('singlejob');
-// // });
+app.get('/singlejob', function (req, res) {
+    res.render('singlejob');
+});
 
 // // app.get('/creatingjob', function (req, res) {
 // //     res.render('CreatingJob')
