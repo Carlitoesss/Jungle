@@ -10,17 +10,6 @@
 </head>
 <body>
     <form class="login text-center" action="/login" method="POST">
-<<<<<<< HEAD
-        <div class="form-group">
-          <label class="display-5" for="exampleInputEmail1">Email address</label>
-            <input type="email" name="email" class="form-control" id="email-input" placeholder="Email" aria-label="First" aria-describedby="basic-addon1" required>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-            <input type="password" name="password" class="form-control" id="password-input" placeholder="Password" aria-describedby="basic-addon1" required>
-        </div>
-        <button type="submit" class="btn btn-default"><a href="/views/homepage.ejs">Login</a></button>
-=======
       <div class="bucket">
         <div class="buffer">
           <div class="header">
@@ -28,15 +17,14 @@
           </div>
            <form method="post" action="/signin">
              <label for="email">Email</label>
-             <input type="text" id="email" />
+             <input type="text" id="email" required/>
              <label for="password" >Password</label>
-             <input type="password" id="password" />
+             <input type="password" id="password" required/>
            
-             <input class="btn" type="submit" value="/signin"/>
+             <input class="btn" type="submit" value="Login"/>
            </form>
        </div>
      </div>
->>>>>>> b1db1016af07b035633dc254441cb73bd056bf89
       </form>
 </body>
 </html>

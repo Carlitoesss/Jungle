@@ -24,7 +24,7 @@ exports.userLogout = (req, res) => {
 
 exports.logins = passport.authenticate('local', {
     successRedirect: '/profile',
-    failureRedirect: '/user/signup' 
+    failureRedirect: '/signup' 
 })
 
 // POST /user/signup
@@ -57,10 +57,9 @@ exports.singlejob = passport.authenticate('local', {
     failureRedirect: '/login' 
 });
 
-exports.creatingjob = passport.authenticate('local', { 
-    successRedirect: '/profile',
-    failureRedirect: '/login' 
-});
+exports.createjob =  (req, res) => {
+    res.render('createjob', {currentUser: req.user});
+}
 
 exports.chat = passport.authenticate('local', { 
     successRedirect: '/profile',
