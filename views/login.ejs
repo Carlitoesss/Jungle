@@ -15,14 +15,16 @@
           <div class="header">
             <h1 class="title">Login</h1>
           </div>
-           <form method="post" action="/signin">
+           <form action="/signin">
              <label for="email">Email</label>
              <input type="text" id="email" />
              <label for="password" >Password</label>
              <input type="password" id="password" />
-           
-             <input class="btn" type="submit" value="/signin"/>
+             <button class="btn" type="submit" value="signin"><a href="/home">Signin</a></button>
            </form>
+              <div class="mt-5">
+                <p>Dont have an account,<a href="/signup">make one for free</a></p>
+             </div>
        </div>
      </div>
       </form>

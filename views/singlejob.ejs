@@ -9,7 +9,7 @@
     <title>Viewing a single job</title>
 </head>
 <body>
-    <form  class="text-center" action="">
+    <form  class="text-center" action="POST" method="POST">
             <div class="navbar-nav-scroll">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                             <a class="navbar-brand" href="homepage">Jungle</a>
@@ -30,8 +30,14 @@
         <h1 class="display-4">Job info</h1><br>
         <img src="/download.png" alt="gt"><br>
     </form class="text-center"><br>
+    <div class="d-flex justify-content-center mt-5"> 
         <textarea id="div3" rows="10" cols="50">
             information about the job.
         </textarea>
+    </div>
+<a href="/Chat">
+    <div class="text-center mt-5">
+      <button class="text-primary">Take Job</button><div ng-app="app" ng-init="liked = false">
+    </div>
 </body>
 </html>
