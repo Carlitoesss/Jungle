@@ -19,8 +19,13 @@ exports.profile = (req, res) => {
 // GET for /logout
 exports.userLogout = (req, res) => {
     req.logout();
-    res.redirect('/user/login');
+    res.redirect('/login');
 }
+
+exports.logins = passport.authenticate('local', {
+    successRedirect: '/profile',
+    failureRedirect: '/user/signup' 
+})
 
 // POST /user/signup
 exports.signup = passport.authenticate('local-signup', {
@@ -31,37 +36,36 @@ exports.signup = passport.authenticate('local-signup', {
 // POST user/login
 exports.userSignin = passport.authenticate('local', { 
     successRedirect: '/profile',
-    failureRedirect: '/user/login' 
+    failureRedirect: '/login' 
 });
 
 exports.forgotpass = passport.authenticate('local', { 
     successRedirect: '/profile',
-    failureRedirect: '/user/login' 
+    failureRedirect: '/login' 
 });
 
-exports.homepage = passport.authenticate('local', { 
-    successRedirect: '/profile',
-    failureRedirect: '/user/login' 
-});
+exports.homepage = (req, res) => {
+    res.render('homepage', {currentUser: req.user});
+}
 
 exports.toa = passport.authenticate('local', { 
     successRedirect: '/profile',
-    failureRedirect: '/user/login' 
+    failureRedirect: '/login' 
 });
 
 exports.singlejob = passport.authenticate('local', { 
     successRedirect: '/profile',
-    failureRedirect: '/user/login' 
+    failureRedirect: '/login' 
 });
 
 exports.creatingjob = passport.authenticate('local', { 
     successRedirect: '/profile',
-    failureRedirect: '/user/login' 
+    failureRedirect: '/login' 
 });
 
 exports.chat = passport.authenticate('local', { 
     successRedirect: '/profile',
-    failureRedirect: '/user/login' 
+    failureRedirect: '/login' 
 });
 
 // // Get login/facebook
