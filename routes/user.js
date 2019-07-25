@@ -22,7 +22,7 @@ router.get('/toa', userController.toa);
 
 router.get('/singlejob', userController.singlejob);
 
-router.get('/createjob', userController.createjob);
+router.get('/createjob',isAuthenticated, userController.createjob);
 
 router.get('/chat', userController.chat);
 
