@@ -22,6 +22,11 @@ exports.userLogout = (req, res) => {
     res.redirect('/login');
 }
 
+exports.logins = passport.authenticate('local', {
+    successRedirect: '/profile',
+    failureRedirect: '/user/signup' 
+})
+
 // POST /user/signup
 exports.signup = passport.authenticate('local-signup', {
     successRedirect: '/profile',
@@ -31,7 +36,7 @@ exports.signup = passport.authenticate('local-signup', {
 // POST user/login
 exports.userSignin = passport.authenticate('local', { 
     successRedirect: '/profile',
-    failureRedirect: '/user/login' 
+    failureRedirect: '/login' 
 });
 
 exports.forgotpass = passport.authenticate('local', { 
@@ -39,10 +44,9 @@ exports.forgotpass = passport.authenticate('local', {
     failureRedirect: '/login' 
 });
 
-exports.homepage = passport.authenticate('local', { 
-    successRedirect: '/profile',
-    failureRedirect: '/login' 
-});
+exports.homepage = (req, res) => {
+    res.render('homepage', {currentUser: req.user});
+}
 
 exports.toa = passport.authenticate('local', { 
     successRedirect: '/profile',
