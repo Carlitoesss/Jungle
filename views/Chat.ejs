@@ -29,16 +29,33 @@
             </nav>
         </div>
    </form>
-   <form>
-       <form>
-            <h1 class="text-center mt-5 display-4">Chat Room</h1><h2 id=div3 class="text-center">Job Info</h2>
-            <section id="chatApp" class="chatApp">
-              <div class="chatApp__loaderWrapper">
-                <div class="chatApp__loaderText">Loading...</div>
-                <div class="chatApp__loader"></div>
-              </div>
-            </section>
-        </form>
-   </form>
+   <div id="chat-wrapper">
+    <div id="chat-content" v-cloak>
+        <div id="chat-header">
+            <div id="chat-description">
+                <span id="chat-name">Chat </span>
+                <span id="chat-members">{{ chat_info.members.join(', ') }}</span>
+            </div>
+            <div id="navigation">
+                <input id="navigation-button" type="checkbox">
+                <label for="navigation-button"><span></span></label>
+                <div id="navigation-menu">
+                    <input type="checkbox" id="slide-button-notif" checked>
+                    <label for="slide-button-notif" class="slide-button">Notifications</label>
+
+                    <input type="checkbox" id="slide-button-online">
+                    <label for="slide-button-online" class="slide-button">Online</label>
+                </div>
+            </div>
+        </div>
+        <div id="messages-area">
+            <user-message-template v-for="(message, index) in chat_info.messages" v-bind:message="message" :key="message.id"></user-message-template>
+        </div>
+        <div id="chat-message-field">
+            <div id="message-text" contenteditable @input="getCurrentMessage($event)" v-on:keydown="senMessageByEnter($event)" ref="messageField"></div>
+            <input id="send-message-button" type="button" v-on:click="sendMessage">
+        </div>
+    </div>
+</div>
 </body>
 </html>
