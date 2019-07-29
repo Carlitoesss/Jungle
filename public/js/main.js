@@ -21,17 +21,17 @@ var app = new Vue({
 	data: {
 		chat_info: {
 			name: 'Jobs',
-			members: ['Paul', 'Pablo'],
+			members: ['Paul', 'Daisy'],
 			messages: [
 				{
 					user_id: 1,
 					user_name: 'Paul',
-					user_img: 'https://res.cloudinary.com/natalik/image/upload/v1537764121/images/The-Fall.jpg',
+					user_img: '/download.jpeg',
 					timestamp: '13:40',
 					date: 1537771200000,
 					user_messages: [
-							   'Hello Stella.'
-							   , 'How are you!?'
+							   'Hello Daisy.'
+							   , 'We need to make some ground rules'
 						   ]
 
 					   }
@@ -40,8 +40,8 @@ var app = new Vue({
 		},
 		current_user: {
 			user_id: 3,
-			user_name: 'Pablo',
-			user_img: 'https://res.cloudinary.com/natalik/image/upload/v1537842919/images/Nick_Fury.png',
+			user_name: 'Daisy',
+			user_img: '/images.jpeg',
 			user_messages: ''
 		}
 	},
