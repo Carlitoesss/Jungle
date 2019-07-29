@@ -20,8 +20,8 @@ var app = new Vue({
 	el: '#chat-content',
 	data: {
 		chat_info: {
-			name: 'Friends',
-			members: ['Paul', 'Stella', 'Nick', 'Alex', 'Natali', 'Diana', 'Kitty', 'Summer'],
+			name: '',
+			members: [],
 			messages: [
 				{
 					user_id: 1,
