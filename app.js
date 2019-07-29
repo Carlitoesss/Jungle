@@ -35,9 +35,9 @@ app.use(passport.session());
 //   res.render('ForgotPass');
 // });
 
-// // app.get('/signup', function (req, res) {
-// //   res.render('SignUp');
-// // });
+// app.get('/signup', function (req, res) {
+//   res.render('SignUp');
+// });
 
 // app.get('/home', function (req, res) {
 //     res.render('homepage')
@@ -64,7 +64,7 @@ app.use(passport.session());
 //   res.render('profile')
 // })
 
-// routing manager
+// // routing manager
 app.use(routes);
 
 

@@ -24,13 +24,13 @@ exports.userLogout = (req, res) => {
 
 exports.logins = passport.authenticate('local', {
     successRedirect: '/profile',
-    failureRedirect: '/user/signup' 
+    failureRedirect: '/signup' 
 })
 
 // POST /user/signup
 exports.signup = passport.authenticate('local-signup', {
     successRedirect: '/profile',
-    failureRedirect: '/user/signup' 
+    failureRedirect: '/signup' 
 });
 
 // POST user/login
