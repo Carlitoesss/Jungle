@@ -52,9 +52,9 @@ app.get('/singlejob', function (req, res) {
     res.render('singlejob');
 });
 
-// // app.get('/creatingjob', function (req, res) {
-// //     res.render('CreatingJob')
-// // })
+// app.get('/createjob', function (req, res) {
+//     res.render('createjob')
+// })
   
 app.get('/chat', function (req, res) {
   res.render('Chat')
