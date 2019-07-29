@@ -46,7 +46,15 @@ exports.forgotpass = passport.authenticate('local', {
 });
 
 exports.homepage = (req, res) => {
-    res.render('homepage', {currentUser: req.user});
+    db.Jobs.findAll({
+        attributes: [ 'userId' ,'title', 'description', 'avatar' ]
+    }).then(function(result){
+        res.render('homepage', {currentUser: req.user, Jobs: results});
+    }).catch(function(err){
+        console.log(err);
+        res.json(err);
+    });
+    
 }
 
 exports.toa = (req, res) => {
