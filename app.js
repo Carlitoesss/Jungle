@@ -25,44 +25,44 @@ app.use(session({ secret: "Were only 15 years old!!!!!", resave: true, saveUnini
 app.use(passport.initialize());
 app.use(passport.session());
 
-// app.get('/login', function (req, res) {
-//   res.render('Login');
-// });
+// // app.get('/login', function (req, res) {
+// //   res.render('Login');
+// // });
 
-// app.post( '/user/signup', userController.signup );
+// // app.post( '/user/signup', userController.signup );
 
-// app.get('/forgotPass', function (req, res) {
-//   res.render('ForgotPass');
-// });
+// // app.get('/forgotPass', function (req, res) {
+// //   res.render('ForgotPass');
+// // });
 
-// app.get('/signup', function (req, res) {
-//   res.render('SignUp');
-// });
+// // // app.get('/signup', function (req, res) {
+// // //   res.render('SignUp');
+// // // });
 
-// app.get('/home', function (req, res) {
-//     res.render('homepage')
-//     console.log(err)
-//   })
+// // app.get('/home', function (req, res) {
+// //     res.render('homepage')
+// //     console.log(err)
+// //   })
 
-// app.get('/toa', function (req, res) {
-//     res.render('toa');
-//   });
+// // app.get('/toa', function (req, res) {
+// //     res.render('toa');
+// //   });
 
-// app.get('/singlejob', function (req, res) {
-//     res.render('singlejob');
-// });
+app.get('/singlejob', function (req, res) {
+    res.render('singlejob');
+});
 
-// app.get('/creatingjob', function (req, res) {
-//     res.render('CreatingJob')
-// })
+// // app.get('/creatingjob', function (req, res) {
+// //     res.render('CreatingJob')
+// // })
   
-// app.get('/chat', function (req, res) {
-//   res.render('Chat')
-// })
+app.get('/chat', function (req, res) {
+  res.render('Chat')
+})
 
-// app.get('/profile', function (req, res) {
-//   res.render('profile')
-// })
+// // app.get('/profile', function (req, res) {
+// //   res.render('profile')
+// // })
 
 // // routing manager
 app.use(routes);

@@ -5,7 +5,7 @@ module.exports = (req, res, next) => {
         return next();
     } 
 
-    return res.redirect('/user/login');
+    return res.redirect('/login');
 };
 
 // i want a multi functioning button but idk how

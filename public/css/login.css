@@ -1,0 +1,82 @@
+body {
+    background: rgb(115, 161, 62);
+    font-family: 'Open Sans','PT Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  }
+  
+  h1.title {
+    font-weight: 500;
+    margin: 0 0 30px;
+  }
+  .bucket {
+    background:#fff;
+    width: 450px;
+    margin: 50px auto;
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  .buffer {
+     padding: 40px;
+  }
+  
+  .header {
+    text-align:center;
+  }
+  .clearfix { 
+    clear: both; 
+    font-size: 1px; 
+    height: 0px; 
+  }
+  
+  form{
+    width: auto;
+  }
+
+input {
+    float: none;
+    width: 94%;
+    margin-bottom: 20px;
+    border: 1px solid #DBE5E7;
+    border-radius: 2px;
+    padding: 12px 10px;
+    font-size:  14px;
+  }
+
+button {
+    float: none;
+    width: 94%;
+    margin-bottom: 20px;
+    border: 1px solid #DBE5E7;
+    border-radius: 2px;
+    padding: 12px 10px;
+    font-size:  14px;
+}  
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  input.btn {
+    background: #00B37C;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #00A779 #009766 #00814E;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.2), 0 -1px 2px rgba(0, 0, 0, 0.2) inset;
+  }
+
+  button.btn {
+    background: #00B37C;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #00A779 #009766 #00814E;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.2), 0 -1px 2px rgba(0, 0, 0, 0.2) inset;
+  }

@@ -24,5 +24,12 @@ body {
 }
 
 #div3 {
+<<<<<<< HEAD
     margin: 10px;
 }
+=======
+    text-align: center;
+    border: 3px solid black;
+}
+
+>>>>>>> ee4815b8bf8b83872e3d11853480cc6bb7eca4e8
