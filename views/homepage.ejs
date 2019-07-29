@@ -32,12 +32,12 @@
           <h2>Available Jobs</h2>
           <br>
           <br>
-        <% for(let i=0; i< jobs.length; i++) { %>
-          <h3> <%= jobs[i].title %></h3>
+        <% for(let i=0; i< Jobs.length; i++) { %>
+          <h3> <%= Jobs[i].title %></h3>
           
-          <a href="/singlejob/<%= jobs[i].id %>"><img src="<%= jobs[i].avatar %>"></a>
+          <a href="/singlejob/<%= Jobs[i].id %>"><img src="<%= Jobs[i].avatar %>"></a>
           <br>
-          <%= jobs[i].description %>
+          <%= Jobs[i].description %>
         <% } %>
 
 

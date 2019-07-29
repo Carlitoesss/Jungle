@@ -65,7 +65,7 @@ exports.singlejob = (req, res) => {
     db.Jobs.findOne({
         where: {id: req.params.jobid } 
     }).then(function(result){
-        res.render('singlejob', {job: result})
+        res.render('singlejob', {Job: result})
     })
 }
 
