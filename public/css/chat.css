@@ -263,7 +263,7 @@ body {
     overflow-y: auto;
 }
 #messages-area:empty {
-    background-image: url(https: //res.cloudinary.com/natalik/image/upload/v1537763869/images/empty_chat.png.jpg);
+    background-image: url(https://res.cloudinary.com/natalik/image/upload/v1537763869/images/empty_chat.png.jpg);
         background-position: center;
     background-repeat: no-repeat;
 }
