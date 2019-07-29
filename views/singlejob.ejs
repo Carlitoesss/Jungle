@@ -21,19 +21,20 @@
                                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                                 <a class="nav-item nav-link" href="/views/profile.ejs">Profile</a>
                                 <a class="nav-item nav-link" href="createjob">Post a Job</a>
+                                <a class="nav-item nav-link" href="signup">Sign Up</a>
                             </div>
                     </div>
                 </nav>
             </div>
-        <h1 class="display-4">Job info</h1><br>
-        <img src="/download.png" alt="gt"><br>
+        <h1 class="display-4"><%= job.title %></h1><br>
+        <img src="<%= job.avatar %>" alt="gt"><br>
     <div class="d-flex justify-content-center mt-5"> 
         <textarea id="div3" rows="10" cols="50">
-            information about the job.
+                <%= job.description %>
         </textarea>
     </div>
     <div href="/chat"><br>
-        <button >Take the job</button>
+        <button > <a href="/chat">Take the job</a></button>
     </div>
 </body>
 </html>

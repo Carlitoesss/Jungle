@@ -1,5 +1,6 @@
 const passport = require('../config/passport');
 const isAuthenticated = require('../config/middleware/isAuthenticated');
+const db = require('../models');
 
 // GET user/signup
 exports.signups = (req, res) => {
@@ -52,10 +53,13 @@ exports.toa = (req, res) => {
     res.render('toa', {currentUser: req.user});
 }
 
-exports.singlejob = passport.authenticate('local', { 
-    successRedirect: '/profile',
-    failureRedirect: '/login' 
-});
+exports.singlejob = (req, res) => {
+    db.Jobs.findOne({
+        where: {id: req.params.jobid } 
+    }).then(function(result){
+        res.render('singlejob', {job: result})
+    })
+}
 
 exports.createjob = (req, res) => {
     res.render('createjob', {currentUser: req.user});
