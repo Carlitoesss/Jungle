@@ -22,27 +22,26 @@
                                <a class="nav-item nav-link active" href="/home">Home <span class="sr-only">(current)</span></a>
                                <a class="nav-item nav-link" href="profile">Profile</a>
                                <a class="nav-item nav-link" href="createjob">Create a Job</a>
-                               <a class="nav-item nav-link" href="signup">Sign Up</a>
                            </div>
                        </div>
                 </nav>
            </div>
     </form>
-      <h1 class="text-center">Home Page</h1>
+
       <div id="div2"class="text-center">
           <h2>Available Jobs</h2>
           <br>
           <br>
-          <h3>Wrecked McLaren Pls Fix :(</h3>
+        <% for(let i=0; i< jobs.length; i++) { %>
+          <h3> <%= jobs[i].title %></h3>
           
-          <a href="singlejob"><img src="/Car.jpeg"></a>
-          <form action="link"></form>
-          <ul class=""><br>
-            <li>Needs new front bumper installation</li>
-            <li>Needs Head light installation</li>
-            <li>Needs a new hood</li>
-            <li>Both fenders need to be installed</li>
-          </ul> 
+          <a href="/singlejob/<%= jobs[i].id %>"><img src="<%= jobs[i].avatar %>"></a>
+          <br>
+          <%= jobs[i].description %>
+        <% } %>
+
+
+  
       </div>
 
   </body>
