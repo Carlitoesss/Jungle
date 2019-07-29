@@ -20,8 +20,8 @@ var app = new Vue({
 	el: '#chat-content',
 	data: {
 		chat_info: {
-			name: '',
-			members: [],
+			name: 'Jobs',
+			members: ['Paul', 'Pablo'],
 			messages: [
 				{
 					user_id: 1,
@@ -35,23 +35,12 @@ var app = new Vue({
 						   ]
 
 					   }
-					   , {
-					user_id: 2,
-					user_name: 'Stella',
-					user_img: 'https://res.cloudinary.com/natalik/image/upload/v1537764116/images/gillian-anderson.jpg',
-					timestamp: '13:46',
-					date: 1537771560000,
-					user_messages: [
-							   'Hi...Paul'
-							   , 'Fine. Where are you?'
-						   ]
-
-					   }
+					   
 				   ]
 		},
 		current_user: {
 			user_id: 3,
-			user_name: 'Nick',
+			user_name: 'Pablo',
 			user_img: 'https://res.cloudinary.com/natalik/image/upload/v1537842919/images/Nick_Fury.png',
 			user_messages: ''
 		}

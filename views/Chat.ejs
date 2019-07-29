@@ -14,11 +14,14 @@
     <div id="chat-content" v-cloak>
         <div id="chat-header">
             <div id="chat-description">
-                <span id="chat-name">Chat </span>
+                <span id="chat-name">{{ chat_info.name }}</span>
                 <span id="chat-members">{{ chat_info.members.join(', ') }}</span>
+               
             </div>
-
-                </div>
+            <div id="navigation">
+                <a href="/home">
+                    <button type="button" class="btn btn-secondary btn-lg">Take Job</button>
+                </a>
             </div>
         </div>
         <div id="messages-area">
@@ -26,10 +29,12 @@
         </div>
         <div id="chat-message-field">
             <div id="message-text" contenteditable @input="getCurrentMessage($event)" v-on:keydown="senMessageByEnter($event)" ref="messageField"></div>
-            <input id="send-message-button" type="submit" v-on:click="sendMessage">
+            <input id="send-message-button" type="button" v-on:click="sendMessage">
         </div>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
 <script src="/js/main.js"></script>
+
 </body>
 </html>
