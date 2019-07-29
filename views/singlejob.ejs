@@ -9,7 +9,7 @@
     <title>Viewing a single job</title>
 </head>
 <body>
-    <form  class="text-center" action="">
+    <form  class="text-center" action="/chat" method="POST">
             <div class="navbar-nav-scroll">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                             <a class="navbar-brand" href="homepage">Jungle</a>
@@ -25,13 +25,15 @@
                     </div>
                 </nav>
             </div>
-    </form>
-    <form class="text-center"><br>
         <h1 class="display-4">Job info</h1><br>
         <img src="/download.png" alt="gt"><br>
-    </form class="text-center"><br>
+    <div class="d-flex justify-content-center mt-5"> 
         <textarea id="div3" rows="10" cols="50">
             information about the job.
         </textarea>
+    </div>
+    <div href="/chat"><br>
+        <button >Take the job</button>
+    </div>
 </body>
 </html>
