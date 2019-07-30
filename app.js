@@ -31,9 +31,9 @@ app.use(passport.session());
 
 // // app.post( '/user/signup', userController.signup );
 
-// // app.get('/forgotPass', function (req, res) {
-// //   res.render('ForgotPass');
-// // });
+ app.get('/forgotPass', function (req, res) {
+     res.render('ForgotPass');
+ });
 
 // // // app.get('/signup', function (req, res) {
 // // //   res.render('SignUp');
