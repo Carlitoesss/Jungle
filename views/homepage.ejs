@@ -12,8 +12,8 @@
 <body>
     <form action="">
         <div class="navbar-nav-scroll">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                           <a class="navbar-brand" href="/home">Jungle</a>
+                <nav class="navbar navbar-expand-lg navbar-white ht bg-white">
+                           <img id="pic" src="pi.png">
                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                              <span class="navbar-toggler-icon"></span>
                            </button>
@@ -22,26 +22,27 @@
                                <a class="nav-item nav-link active" href="/home">Home <span class="sr-only">(current)</span></a>
                                <a class="nav-item nav-link" href="profile">Profile</a>
                                <a class="nav-item nav-link" href="createjob">Create a Job</a>
+                               <a class="nav-item nav-link" href="/logout">Logout</a>
                            </div>
                        </div>
                 </nav>
            </div>
     </form>
-      <h1 class="text-center">Home Page</h1>
+
       <div id="div2"class="text-center">
           <h2>Available Jobs</h2>
           <br>
           <br>
-          <h3>Wrecked McLaren Pls Fix :(</h3>
+        <% for(let i=0; i< Jobs.length; i++) { %>
+          <h3> <%= Jobs[i].title %></h3>
           
-          <a href="singlejob"><img src="/Car.jpeg"></a>
-          <form action="link"></form>
-          <ul class=""><br>
-            <li>Needs new front bumper installation</li>
-            <li>Needs Head light installation</li>
-            <li>Needs a new hood</li>
-            <li>Both fenders need to be installed</li>
-          </ul> 
+          <a href="/singlejob/<%= Jobs[i].id %>"><img src="<%= Jobs[i].avatar %>"></a>
+          <br>
+          <%= Jobs[i].description %>
+        <% } %>
+
+
+  
       </div>
   </body>
 </html>

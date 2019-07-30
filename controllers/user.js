@@ -61,10 +61,13 @@ exports.toa = (req, res) => {
     res.render('toa', {currentUser: req.user});
 }
 
-exports.singlejob = passport.authenticate('local', { 
-    successRedirect: '/profile',
-    failureRedirect: '/login' 
-});
+exports.singlejob = (req, res) => {
+    db.Jobs.findOne({
+        where: {id: req.params.jobid } 
+    }).then(function(result){
+        res.render('singlejob', {Job: result})
+    })
+}
 
 exports.createjob = (req, res) => {
     res.render('createjob', {currentUser: req.user});

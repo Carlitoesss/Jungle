@@ -20,7 +20,7 @@ router.get('/home', userController.homepage );
 
 router.get('/toa', userController.toa);
 
-router.get('/singlejob', userController.singlejob);
+router.get('/singlejob/:jobid', userController.singlejob);
 
 router.get('/createjob',isAuthenticated, userController.createjob);
 
