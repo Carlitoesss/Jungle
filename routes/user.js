@@ -24,7 +24,7 @@ router.get('/singlejob/:jobid', userController.singlejob);
 
 router.get('/createjob',isAuthenticated, userController.createjob);
 
-router.get('/chat', userController.chat);
+router.get('/chat', isAuthenticated, userController.chat);
 
 router.get('/profile', isAuthenticated, userController.profile);
 
