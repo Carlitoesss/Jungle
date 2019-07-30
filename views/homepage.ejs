@@ -28,21 +28,20 @@
                 </nav>
            </div>
     </form>
-
+    
       <div id="div2"class="text-center">
           <h2>Available Jobs</h2>
           <br>
           <br>
-        <% for(let i=0; i< Jobs.length; i++) { %>
-          <h3> <%= Jobs[i].title %></h3>
-          <%= Jobs[i].id %>
-          <a href="/singlejob/<%= Jobs[i].id %>"><img src="<%= Jobs[i].avatar %>"></a>
+          <% for(let i=0; i< Jobs.length; i++) { %>
+            <div id="spacing">
+            <h3> <%= Jobs[i].title %></h3>
+            <%= Jobs[i].id %>
+            <a href="/singlejob/<%= Jobs[i].id %>"><img src="<%= Jobs[i].avatar %>"></a>
           <br>
-          <%= Jobs[i].description %>
-        <% } %>
-
-
-  
-      </div>
+            <%= Jobs[i].description %>
+          <% } %>
+          </div>
+        </div>
   </body>
 </html>
