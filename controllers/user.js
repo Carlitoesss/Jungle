@@ -75,10 +75,9 @@ exports.createjob = (req, res) => {
 
 
 
-exports.chat = passport.authenticate('local', { 
-    successRedirect: '/profile',
-    failureRedirect: '/login' 
-});
+exports.chat = (req, res) => {
+    res.render('Chat', {currentUser: req.user});
+}
 
 // // Get login/facebook
 // exports.fblogin = passport.authenticate('facebook');

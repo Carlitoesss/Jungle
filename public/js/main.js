@@ -31,7 +31,7 @@ var app = new Vue({
 					date: 1537771200000,
 					user_messages: [
 							   'Hello Daisy.'
-							   , 'We need to make some ground rules'
+							   , 'You will need to bring your own supplies '
 						   ]
 
 					   }
