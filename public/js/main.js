@@ -20,39 +20,28 @@ var app = new Vue({
 	el: '#chat-content',
 	data: {
 		chat_info: {
-			name: 'Friends',
-			members: ['Paul', 'Stella', 'Nick', 'Alex', 'Natali', 'Diana', 'Kitty', 'Summer'],
+			name: 'Jobs',
+			members: ['Paul', 'Daisy'],
 			messages: [
 				{
 					user_id: 1,
 					user_name: 'Paul',
-					user_img: 'https://res.cloudinary.com/natalik/image/upload/v1537764121/images/The-Fall.jpg',
+					user_img: '/download.jpeg',
 					timestamp: '13:40',
 					date: 1537771200000,
 					user_messages: [
-							   'Hello Stella.'
-							   , 'How are you!?'
+							   'Hello Daisy.'
+							   , 'We need to make some ground rules'
 						   ]
 
 					   }
-					   , {
-					user_id: 2,
-					user_name: 'Stella',
-					user_img: 'https://res.cloudinary.com/natalik/image/upload/v1537764116/images/gillian-anderson.jpg',
-					timestamp: '13:46',
-					date: 1537771560000,
-					user_messages: [
-							   'Hi...Paul'
-							   , 'Fine. Where are you?'
-						   ]
-
-					   }
+					   
 				   ]
 		},
 		current_user: {
 			user_id: 3,
-			user_name: 'Nick',
-			user_img: 'https://res.cloudinary.com/natalik/image/upload/v1537842919/images/Nick_Fury.png',
+			user_name: 'Daisy',
+			user_img: '/images.jpeg',
 			user_messages: ''
 		}
 	},
