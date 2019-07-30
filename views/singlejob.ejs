@@ -11,8 +11,8 @@
 <body>
     <form  class="text-center" action="/chat" method="POST">
             <div class="navbar-nav-scroll">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                            <img id="pic" src="pi.png">
+                <nav class="navbar navbar-expand-lg navbar-white bg-white">
+                            <img id="pic" src="/pi.png">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -25,15 +25,15 @@
                     </div>
                 </nav>
             </div>
-        <h1 class="display-4"><%= job.title %></h1><br>
-        <img src="<%= job.avatar %>" alt="gt"><br>
+        <h1 class="display-4"><%= Job.title %></h1><br>
+        <img src="<%= Job.avatar %>" alt="gt"><br>
     <div class="d-flex justify-content-center mt-5"> 
         <textarea id="div3" rows="10" cols="50">
-                <%= job.description %>
+                <%= Job.description %>
         </textarea>
     </div>
     <div href="/chat"><br>
-        <button > <a href="/chat">Take the job</a></button>
+        <a href="/chat">Take the job</a>
     </div>
 </body>
 </html>

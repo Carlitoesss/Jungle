@@ -47,7 +47,7 @@ exports.forgotpass = passport.authenticate('local', {
 
 exports.homepage = (req, res) => {
     db.Jobs.findAll({
-        attributes: [ 'userId' ,'title', 'description', 'avatar' ]
+        attributes: [ 'id','userId' ,'title', 'description', 'avatar' ]
     }).then(function(results){
         res.render('homepage', {currentUser: req.user, Jobs: results});
     }).catch(function(err){
@@ -75,10 +75,9 @@ exports.createjob = (req, res) => {
 
 
 
-exports.chat = passport.authenticate('local', { 
-    successRedirect: '/profile',
-    failureRedirect: '/login' 
-});
+exports.chat = (req, res) => {
+    res.render('Chat', {currentUser: req.user});
+}
 
 // // Get login/facebook
 // exports.fblogin = passport.authenticate('facebook');

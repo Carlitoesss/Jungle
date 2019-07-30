@@ -22,7 +22,7 @@
                                <a class="nav-item nav-link active" href="/home">Home <span class="sr-only">(current)</span></a>
                                <a class="nav-item nav-link" href="profile">Profile</a>
                                <a class="nav-item nav-link" href="createjob">Create a Job</a>
-                               <a class="nav-item nav-link" href="/logout">Logout</a>
+                               <a class="nav-item nav-link" href="/login">login</a>
                            </div>
                        </div>
                 </nav>
@@ -35,7 +35,7 @@
           <br>
         <% for(let i=0; i< Jobs.length; i++) { %>
           <h3> <%= Jobs[i].title %></h3>
-          
+          <%= Jobs[i].id %>
           <a href="/singlejob/<%= Jobs[i].id %>"><img src="<%= Jobs[i].avatar %>"></a>
           <br>
           <%= Jobs[i].description %>
@@ -44,6 +44,5 @@
 
   
       </div>
-
   </body>
 </html>
