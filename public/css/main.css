@@ -26,3 +26,7 @@ body {
     height: auto;
 
 }
+
+#spacing {
+    margin:40px;
+}
