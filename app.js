@@ -48,17 +48,17 @@ app.use(passport.session());
 // //     res.render('toa');
 // //   });
 
-app.get('/singlejob', function (req, res) {
-    res.render('singlejob');
-});
+// app.get('/singlejob', function (req, res) {
+//    res.render('singlejob');
+// });
 
 // app.get('/createjob', function (req, res) {
 //     res.render('createjob')
 // })
   
-app.get('/chat', function (req, res) {
-  res.render('Chat')
-})
+// app.get('/chat', function (req, res) {
+//  res.render('Chat')
+// })
 
 // // app.get('/profile', function (req, res) {
 // //   res.render('profile')
