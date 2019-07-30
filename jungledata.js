@@ -50,9 +50,9 @@ db.Jobs.create({
     address: " 772 Bam Bam Drive",
     length: '15 minutes',
     title: " Changing Light Bulb",
-    description: "I have a light bulb i'm to short to change  it",
+    description: "I have a light bulb i'm to short to change it",
     userId: 5 ,
-    avatar: "https://campbell.armymwr.com/application/files/4115/2045/5599/FC-MST-Babysitting-Class.jpg"
+    avatar: "https://s3.amazonaws.com/multiwp/wp-content/uploads/sites/2/2018/04/03015511/light-bulb.jpg"
 });
 
 // db.Jobs.create({
