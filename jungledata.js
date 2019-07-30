@@ -13,7 +13,7 @@ db.Jobs.create({
 
 db.Jobs.create({
     category: "Manual Labor",
-    pay: 5 ,
+    pay: 1 ,
     address: "123 Sesame Street",
     length: '15-30 Minutes',
     title: "Washing Car",
