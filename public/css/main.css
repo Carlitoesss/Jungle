@@ -32,3 +32,11 @@ body {
 #spacing {
     margin:40px;
 }
+
+
+#boxs {
+    width: 450px;
+    height: 150px;
+    text-align: center;
+    border: 3px solid black;
+}
