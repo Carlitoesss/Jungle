@@ -3,7 +3,7 @@ body {
 }
 
 .mtn {
-    background-color: rgb(83, 74, 74);
+    background-color: white;
 }
 
 
@@ -17,6 +17,8 @@ body {
 
 
 #div3 {
+    width: 450px;
+    height: 150px;
     text-align: center;
     border: 3px solid black;
 }
