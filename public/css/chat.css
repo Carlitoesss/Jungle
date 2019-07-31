@@ -387,3 +387,23 @@ body {
     white-space: normal;
     word-break: break-all;
 }
+
+#button {
+    box-shadow: #19222d;
+    background-color: #19222d;
+    border: #19222d;
+}
+
+#button2 {
+    box-shadow: #19222d;
+    background-color: #19222d;
+    border: #19222d;
+}
+
+#button:hover {
+    color: red;
+}
+
+#button2:hover {
+    color: rgb(19, 218, 19);
+}

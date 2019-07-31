@@ -17,6 +17,8 @@ body {
 
 
 #div3 {
+    width: 450px;
+    height: 150px;
     text-align: center;
     border: 3px solid black;
 }

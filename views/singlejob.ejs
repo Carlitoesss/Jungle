@@ -26,15 +26,19 @@
                     </div>
                 </nav>
             </div>
+     <div>
         <h1 class="display-4"><%= Job.title %></h1><br>
         <img src="<%= Job.avatar %>" alt="gt"><br>
-    <div class="d-flex justify-content-center mt-5"> 
-        <textarea id="div3" rows="10" cols="50">
+     <div class="d-flex justify-content-center mt-5"> 
+        <p id="div3">
                 <%= Job.description %>
-        </textarea>
+        </p>
     </div>
+     </div>
     <div href="/chat"><br>
-        <a href="/chat">Take the job</a>
+        <a href="/chat">Chat with ...</a>
+        <br>
     </div>
+    </form>
 </body>
 </html>
