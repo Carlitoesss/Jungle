@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/signup.css">
     <title>Register</title>
 </head>
 <body>
     <form action="/signup" method="POST" class="text-center">
-        <h10 class="display-3">Jungle</h10>
+        <h10 class="display-3">Jungle</h10><br>
+        <br>
+     <div id="iff">
         <h1 class="mt-5 text-center">Sign Up</h1><br> 
+     <div id="signup">   
          <h2 class="display-5 text-center ">Name</h2>
          <div class="display-5 text-center">
              <input name="name" type="text" class=" mt-1 mb-4 text-center" placeholder="First and Last" aria-label="First" aria-describedby="basic-addon1" required>
@@ -31,10 +34,14 @@
         <input type="checkbox" required>
         <a href="/toa" >terms of agreement</a>
         <br>
-    <h9>Avatar</h9><br>
+     <h9>Avatar</h9><br>
         <input type="file" name="avatar" class="text-center mb-3" placeholder="Avatar" accept="image/png image/jpeg">
+     </div>
+     </div>
         <br><button type="submit">Create your account</button>
         <br><p class="text-center mt-3">Already have an account? Sign in <a href="/login">here</a>.</p>
     </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="/js/signup"></script>
 </body>
 </html>
